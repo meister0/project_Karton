@@ -1,0 +1,814 @@
+@media (max-width: 992px)
+  .menu
+    &-items
+      &__item
+        position: relative
+        border: none
+        width: auto
+        display: flex
+        justify-content: center
+        &::after
+          position: absolute
+          content: ''
+          right: -10px
+          width: 1px
+          height: 100%
+          background-color: rgba(255,255,255,.2)
+        &:nth-last-child(1)
+          &::after
+            background-color: transparent
+        a
+          margin-top: -10px
+          width: 100%
+          display: flex
+          align-items: center
+          justify-content: center
+          height: 44px
+          text-transform: uppercase
+          color: $text-color-light
+          text-decoration: none
+          font-size: 12px
+          font-weight: 400
+          line-height: 22px
+          
+          &:hover
+            text-decoration: underline
+  .header
+    &-contacts
+      &__phone
+        font-size: 16px
+        padding: 0px 8px
+  .button
+    padding: 8px 16px
+    font-size: 12px
+
+  .feedback
+    &-slider
+      padding: 0px 12px
+      width: 100%
+      .slick
+        &-arrow
+          position: absolute
+          top: 50%
+          margin-top: -39px
+          height: 78px
+          width: 22px
+          z-index: 50
+          border: 1px solid $active-color
+          font-size: 0
+        &-prev 
+          left: 0
+          background: url('../img/production/arrow-left.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-left_active.png') center no-repeat !important
+        &-next 
+          right: 0
+          background: url('../img/production/arrow-right.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-right_active.png') center no-repeat !important
+        &-disabled 
+      &__slide
+        animation-name: fadeIn
+        img
+          height: 377px
+          width: 274px
+  .main
+    padding-top: 45px
+    background-size: cover
+    &-text
+      &__title
+        font-size: 26px
+      &__subtitle
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 20px
+      &__form
+    .form
+      &-text
+        padding: 0
+        font-size: 16px
+  .features
+    &-block
+      flex-basis: 48%
+    .numbers-block
+      &__title
+        font-size: 26px
+      &__text
+        font-size: 14px
+  .products
+    padding-bottom: 10px
+    .row
+      .col-12
+        &:nth-child(3)
+          .products-block__img
+            height: 227px
+    &-block
+      min-height: 380px
+      &__img
+        width: 100%
+        min-width: 250px
+        height: 250px
+  .contacts
+    &-block
+      left: 10%
+    
+  .popup
+    width: 600px
+    &-form
+      padding: 20px 50px
+      &__input
+        margin-bottom: 15px
+        width: 300px
+        text-align: center
+        font-size: 20px
+      &__btn
+        font-size: 16px
+      &-header
+        width: 100%
+        font-size: 25px
+        span
+          font-size: 20px
+    .main-form
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+
+//----------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 768px)
+      
+  body
+    padding: 0
+
+  .hidden-mobile
+    display: none
+  .hidden-desktop
+    display: block
+
+  .section-title
+    &::after
+      height: 0
+      width: 0
+
+  .header
+    &-hum
+      display: flex
+    &-logo
+      background: $active-color url(../img/header-logo_mobile.png) center no-repeat
+      width: 35px
+      height: 35px
+      border-radius: 4px
+    &-contacts
+      &__phone
+        font-size: 14px
+        span
+          font-weight: 900
+        &s
+          flex-direction: column
+        &:nth-child(2)
+          border: none
+          margin-right: 0
+      &__button
+        display: inline-block
+        padding: 9px !important
+        font-size: 15px 
+        line-height: 0
+        img
+          width: 14px
+          height: 16px
+        span
+          width: 0
+          height: 0
+  .overlay_m
+    .menu
+      display: block
+      position: fixed
+      height: 100%
+      background-color: $bg-color-dark
+      width: 70%
+      top: 0
+      left: 0
+      z-index: 1001
+      &-items
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        &__item
+          margin-top: 25px
+          border-right: none
+          height: 35px
+          width: 100%
+          &::after
+            display: none
+          &:nth-last-child(1)
+            border: none
+          a
+            margin-top: -10px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 44px
+            text-transform: uppercase
+            color: $text-color-light
+            text-decoration: none
+            font-size: 18px
+            font-weight: 400
+            line-height: 22px
+            
+            &:hover
+              text-decoration: underline
+
+  .main
+    padding: 40px 0
+    text-align: center
+    background-size: cover
+    &-text
+      &__title
+        font-size: 22px
+        color: $active-color
+      &__subtitle
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 20px
+      &__form
+        background-color: transparent
+        padding: 0
+        .button
+          padding: 13px
+  .features
+    &-block
+      &__img
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 100px
+        flex-basis: 50%
+
+  .form
+    display: block
+    &-text
+      max-width: 300px
+      margin: auto
+      padding-right: 0
+      font-size: 15px
+      line-height: 1.2
+      margin-bottom: 13px
+      &__title
+        padding-top: 10px
+        display: block
+    input:nth-child(2)
+      width: 180px
+      height: 51px
+      padding-top: 14px
+      display: block
+      margin: auto
+    &__input
+      margin: auto
+      padding: auto
+      width: 270px
+      margin-bottom: 13px
+      padding: 17px 55px
+      font-size: 13px
+    &__tip
+      margin-left: 0
+      padding-top: 10px
+      font-size: 13px
+
+  .numbers
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 24px
+
+  .features
+    padding-top: 24px
+    &-blocks
+      flex-direction: column
+    &-block
+      margin-bottom: 8px
+
+  .button
+    padding: 15px 22px
+    font-size: 16px
+    &_big
+
+
+  .products
+    padding-top: 32px
+    padding-bottom: 0px
+    &-block
+      &__img
+        height: 100%
+        width: 100%
+        margin-bottom: 5px
+        text-align: center
+        img
+          margin: auto
+      .karton
+        height: 90% !important
+
+  .products .row .col-12:nth-child(3) .products-block__img 
+    height: 300px
+  .products .row .col-12:nth-child(4) .products-block 
+    margin-bottom: 10px
+  .offer
+    padding: 30px 0
+    &-title
+      width: 300px
+      margin: auto
+      font-size: 20px
+      font-weight: 500
+      &_small
+        padding-top: 7px
+        font-size: 16px
+        font-weight: 400
+    &-form
+      &__label
+        font-size: 14px
+        font-weight: 300
+        line-height: 30px
+      &__button
+        margin-bottom: 10px
+  .form
+    &__small
+      font-size: 13px
+      font-weight: 300
+
+  .production
+    padding-top: 0
+    &-slider-small
+      height: auto
+      margin-bottom: 27px
+      .slick
+        &-arrow
+          top: 50%
+          margin-top: -39px
+          height: 78px
+        &-slide
+          height: 100%
+          .filter-dark
+            img
+              height: 100%
+              width: 100%
+    &-text
+      &__text
+        text-align: justify
+        padding: 17px 4px
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+      &__header
+        padding-top: 16px
+        height: 53px
+        font-size: 20px
+        margin-left: 0
+        width: 100%
+        text-transform: uppercase
+        text-align: center
+        padding-left: 0
+
+  .clients
+    &__client
+      height: 87px
+      width: 100%
+      min-height: 87px
+      height: 90%
+      padding: 5px
+      img 
+        max-height: 75px
+        filter: grayscale(0)
+
+  .feedback
+    &-slider
+      padding: 0px 12px
+      width: 100%
+      .slick
+        &-arrow
+          position: absolute
+          top: 50%
+          margin-top: -39px
+          height: 78px
+          width: 22px
+          z-index: 50
+          border: 1px solid $active-color
+          font-size: 0
+        &-prev 
+          left: 0
+          background: url('../img/production/arrow-left.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-left_active.png') center no-repeat !important
+        &-next 
+          right: 0
+          background: url('../img/production/arrow-right.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-right_active.png') center no-repeat !important
+        &-disabled 
+      &__slide
+        img
+          height: 377px
+          width: 274px
+  .contacts
+    position: relative
+    font-weight: 300
+    height: 1000px
+    display: flex
+    flex-direction: column-reverse
+
+    &__title
+      display: block
+      margin-bottom: 5px
+    &-block
+      position: relative
+      top: 0
+      left: 0
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      background-color: #fff
+      padding: 40px 45px
+      padding-left: 40px
+      border: none
+      box-shadow: none
+      border-radius: 0
+      &__title
+        position: relative   
+        display: flex
+        justify-content: center
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 8px
+        margin-top: 8px
+        &::before
+          position: absolute
+          content: ''
+          left: -30px
+          top: 4px
+          height: 100%
+          width: 20px
+      &__text
+        margin-bottom: 25px 
+      &__address
+        span
+          &:nth-child(1)
+            &::before
+              background: none
+      &__phone
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 15px
+        line-height: 25px
+        span
+          &:nth-child(1)
+            &::before
+              background: none
+        .contacts-block__title
+          margin-bottom: 0px
+          
+      &__cta
+        margin-bottom: 15px
+      &__mail
+        margin-bottom: 0px
+        span
+          &:nth-child(1)
+            &::before
+              background: none
+  .popup
+    width: 480px
+    &-form
+      padding: 20px 20px
+      &__input
+        margin-bottom: 15px
+        width: 300px
+        text-align: center
+        font-size: 20px
+      &__label
+        text-align: center
+        margin-top: 10px
+        font-size: 16px
+        
+      &-header
+        width: 100%
+        font-size: 22px
+        span
+          font-size: 18px
+  
+//----------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 576px)
+
+  body
+    padding: 0
+
+  .hidden-mobile
+    display: none
+
+  .section-title
+    &::after
+      height: 0
+      width: 0
+  .button
+    padding: 12px 16px
+  .header
+    &-hum
+      display: flex
+    &-logo
+      background: $active-color url(../img/header-logo_mobile.png) center no-repeat
+      width: 35px
+      height: 35px
+      border-radius: 4px
+    &-contacts
+      &__phone
+        font-size: 14px
+        span
+          font-weight: 900
+        &s
+          flex-direction: column
+        &:nth-child(2)
+          border: none
+          margin-right: 0
+      &__button
+        display: inline-block
+        padding: 7px
+        font-size: 15px 
+        line-height: 0
+        img
+          width: 14px
+          height: 16px
+        span
+          width: 0
+          height: 0
+  .overlay_m
+    .menu
+      display: block
+      position: fixed
+      height: 100%
+      background-color: $bg-color-dark
+      width: 100%
+      top: 0
+      left: 0
+      z-index: 1001
+      &-items
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        &__item
+          margin-top: 25px
+          border-right: none
+          height: 35px
+          width: 100%
+          &::after
+            display: none
+          &:nth-last-child(1)
+            border: none
+          a
+            margin-top: -10px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 44px
+            text-transform: uppercase
+            color: $text-color-light
+            text-decoration: none
+            font-size: 18px
+            font-weight: 400
+            line-height: 22px
+            
+            &:hover
+              text-decoration: underline
+
+  .main
+    padding-top: 45px
+    text-align: center
+    background-size: cover
+    &-text
+      &__title
+        font-size: 22px
+        color: $active-color
+      &__subtitle
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 20px
+      &__form
+        background-color: transparent
+        padding: 0
+  .features
+    &-block
+      &__img
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 100px
+        flex-basis: 50%
+
+  .form
+    display: block
+    &-text
+      max-width: 300px
+      margin: auto
+      padding-right: 0
+      font-size: 15px
+      line-height: 1.2
+      margin-bottom: 13px
+      &__title
+        padding-top: 10px
+        display: block
+    input:nth-child(2)
+      width: 180px
+      height: 51px
+      padding-top: 14px
+      display: block
+      margin: auto
+    &__input
+      margin: auto
+      padding: auto
+      width: 270px
+      margin-bottom: 13px
+      padding: 17px 55px
+      font-size: 13px
+    &__tip
+      margin-left: 0
+      padding-top: 10px
+      font-size: 13px
+
+  .numbers
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 24px
+
+  .features
+    padding-top: 24px
+    &-blocks
+      flex-direction: column
+    &-block
+      margin-bottom: 8px
+
+  
+  .products
+    padding-top: 32px
+    padding-bottom: 23px
+    
+    &-block
+      &__img
+        height: 100%
+        width: 100%
+        margin-bottom: 5px
+        text-align: center
+        img
+          margin: auto
+      .karton
+        height: 90% !important
+  .products
+    .row
+      .col-12
+        &:nth-child(3)
+          .products-block__img
+            height: 100%
+
+
+  .offer
+    padding: 50px 0
+    &-title
+      width: 300px
+      margin: auto
+      font-size: 20px
+      font-weight: 500
+      &_small
+        padding-top: 7px
+        font-size: 16px
+        font-weight: 400
+    &-form
+      &__label
+        font-size: 14px
+        font-weight: 300
+        line-height: 30px
+      &__button
+        margin-bottom: 10px
+  .form
+    &__small
+      font-size: 13px
+      font-weight: 300
+
+  .production
+    padding-top: 0
+    &-slider-small
+      height: auto
+      margin-bottom: 27px
+      .slick
+        &-arrow
+          top: 50%
+          margin-top: -39px
+          height: 78px
+        &-slide
+          height: 100%
+          .filter-dark
+            img
+              height: 100%
+              width: 100%
+    &-text
+      &__text
+        text-align: justify
+        padding: 17px 4px
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+      &__header
+        padding-top: 16px
+        height: 53px
+        font-size: 20px
+        margin-left: 0
+        width: 100%
+        text-transform: uppercase
+        text-align: center
+        padding-left: 0
+
+  .clients
+    &__client
+      height: 87px
+      width: 100%
+      min-height: 87px
+      height: 90%
+      padding: 5px
+      img 
+        max-height: 75px
+        filter: grayscale(0)
+
+  .feedback
+    &-slider
+      padding: 0px 12px
+      width: 100%
+      .slick
+        &-arrow
+          position: absolute
+          top: 50%
+          margin-top: -39px
+          height: 78px
+          width: 22px
+          z-index: 50
+          border: 1px solid $active-color
+          font-size: 0
+        &-prev 
+          left: 0
+          background: url('../img/production/arrow-left.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-left_active.png') center no-repeat !important
+        &-next 
+          right: 0
+          background: url('../img/production/arrow-right.png') center no-repeat !important
+          &:hover
+            cursor: pointer
+            background: $active-color url('../img/production/arrow-right_active.png') center no-repeat !important
+        &-disabled 
+      &__slide
+        img
+          height: 377px
+          width: 274px
+  .contacts-block
+    padding-left: 40px
+  .popup
+    width: 80%
+    &__title
+      font-size: 18px
+    &-form
+      padding: 20px 10px
+      &__label
+        width: 100%
+      &__input
+        margin-bottom: 15px
+        width: 230px
+        text-align: center
+        font-size: 16px
+      &__btn
+        padding: 10px 15px
+        margin: auto
+        width: 170px  
+        margin-bottom: 5px
+        font-size: 16px
+      &-header
+        width: 100%
+        font-size: 22px
+        span
+          padding: 5px 20px
+          display: block
+          font-size: 16px
+
+
+
+
+

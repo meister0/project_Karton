@@ -1,0 +1,56 @@
+.section
+  &-title
+    font-size: 27px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 29px
+    &::after
+      margin-top: 12px
+      content: ''
+      display: block
+      height: 6px
+      background: url(../img/line.png) center no-repeat
+.button
+  border: 1px solid transparent
+  border-radius: 5px
+  color: $text-color-light
+  background-color: $active-color
+  font-size: 14px
+  padding: 13px 22px
+  outline: none
+  line-height: 20px
+  &:hover
+    background-color: lighten($active-color, 5)
+    cursor: pointer
+  img
+    margin-right: 2px
+    vertical-align: middle
+  &_big
+    padding-top: 17px
+    padding-bottom: 18px
+    vertical-align: middle
+    height: 56px
+  &-o
+    border: 1px solid rgba(#373737, 0.5)
+    background-color: transparent
+    color: $text-color-dark
+    &:hover
+      background-color: $active-color
+      cursor: pointer
+      color: $text-color-light
+      border: 1px solid transparent
+.dark-bg
+  position: relative
+  z-index: 2
+  //  Затемнение фонового изображения на главном экране 
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.65)
+    z-index: -1

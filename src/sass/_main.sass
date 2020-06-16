@@ -1,0 +1,54 @@
+.main
+  position: relative
+  padding-top: 65px
+  padding-bottom: 60px
+  background: rgba(#373737, 0.8) url(../img/main/main-bg.jpg) center no-repeat
+  background-size: cover
+  color: $text-color-light
+  transition: 2s
+  z-index: 1
+  // Оформление главной картинки 
+  &-img
+    position: relative
+    z-index: 2
+    &__item
+  //Заголовок
+  &-text
+    &__title
+      font-size: 41px
+      font-weight: 700
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 28px
+      font-weight: 300
+      margin-bottom: 20px
+    &__form
+      background-color: rgba(#fff, 0.2)
+      padding: 20px 25px
+//Форма
+.form
+  display: flex
+  //justify-content: space-between
+  &-text
+    margin-bottom: 20px
+    padding-right: 91px
+    font-size: 20px
+    font-weight: 300
+    line-height: 30px
+    &__title
+      font-weight: 700
+      text-transform: uppercase
+      display: block
+  &__input 
+    max-width: 365px
+    padding: 20px
+    border-radius: 5px
+    border: none
+    vertical-align: middle
+    width: 100%
+    margin-right: 10px
+    margin-bottom: 12px
+  &__tip
+    margin-left: 20px
+    font-size: 14px
+    font-weight: 300

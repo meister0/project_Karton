@@ -1,0 +1,18 @@
+img
+  max-width: 100%
+*
+  margin: 0
+  box-sizing: border-box
+input, button
+  &:focus
+    outline: none
+.df
+  display: flex
+.hidden-desktop
+  display: none 
+
+@for $p from 0 through 10
+  .p-l-#{$p}
+    padding-left: $p*5px
+  .p-r-#{$p}
+    padding-right: $p*5px
