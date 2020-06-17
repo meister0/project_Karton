@@ -684,7 +684,7 @@ button:focus {
   position: relative;
   padding-top: 65px;
   padding-bottom: 60px;
-  background: rgba(55, 55, 55, 0.8) url(../img/main/main-bg.jpg) center no-repeat;
+  background: rgba(55, 55, 55, 0.8) url("../img/main/main-bg.jpg") center no-repeat;
   background-size: cover;
   color: #ffffff;
   -webkit-transition: 2s;
