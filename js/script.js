@@ -116,13 +116,13 @@ $(document).ready(function () {
 		if (b === 0) {
 			$('.main').css({
 				background:
-					"rgba(55, 55, 55, 0.8) url('../img/main/main-bg_2.jpg') center / cover no-repeat",
+					"rgba(55, 55, 55, 0.8) url('img/main/main-bg_2.jpg') center / cover no-repeat",
 			});
 			b++;
 		} else {
 			$('.main').css({
 				background:
-					"rgba(55, 55, 55, 0.8) url('../img/main/main-bg.jpg') center / cover no-repeat",
+					"rgba(55, 55, 55, 0.8) url('img/main/main-bg.jpg') center / cover no-repeat",
 			});
 			b--;
 		}
