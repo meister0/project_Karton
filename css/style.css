@@ -540,6 +540,7 @@ button:focus {
 }
 
 .overlay_m {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1446,10 +1447,6 @@ button:focus {
 
   .hidden-mobile {
     display: none;
-  }
-
-  .hidden-desktop {
-    display: block;
   }
 
   .section-title::after {
